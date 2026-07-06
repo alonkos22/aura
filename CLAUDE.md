@@ -19,8 +19,9 @@ the Guardian MVP is stable and has passed its own `/redteam`.
 | /alt3 plan | `00-alt3-plan.md` | ✅ done |
 | Step 1 — foundations + child 30-sec dashboard | `01-design-foundations.md` | ✅ passed `/redteam` (`02-…`) |
 | Step 2 — Guardian conversation design (master prompt, flows, abuse flows) | `04-conversation-design.md` | ✅ passed `/redteam` (`05-…`) |
-| Step 3 — implementation blueprint | — | ⏳ awaiting owner approval |
-| Code | — | ⛔ only after Step 3 passes `/redteam` |
+| Step 3 — implementation blueprint | `06-implementation-blueprint.md` | ✅ passed `/redteam` (`07-…`) |
+| Code — Phase A (infra: src/ restructure + AI proxy) | blueprint §6 | ⏳ awaiting owner approval |
+| Code — Phase B (screens, no AI) → Phase C (Guardian chat) | blueprint §6 | ⛔ sequential, after A |
 
 Latest session recap: `docs/personal-guardian/03-recap-2026-07-06.md`.
 
@@ -59,6 +60,8 @@ Latest session recap: `docs/personal-guardian/03-recap-2026-07-06.md`.
   are ephemeral; GitHub is the only shared memory between the owner's computer, phone
   sessions, and cloud sessions.
 - Work on a feature branch, never directly on `main` (protects the Vercel deployment).
+- **Do not merge the Guardian branch to `main` before Phase-C sign-off (RT-26).** Use
+  Vercel branch preview URLs to try work-in-progress.
 
 ## 8. Open owner decisions
 1. Backend timing: server proxy inside Step 3 vs. separate infra task first (§8.1 of `01`).
