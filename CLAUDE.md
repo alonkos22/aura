@@ -1,7 +1,14 @@
 # CLAUDE.md — Aura Project Context
 
-*Read this first in every session. The design docs in `docs/personal-guardian/` are the
-source of truth for the Personal Guardian module; this file is the map.*
+> ## ⚠️ THIS REPO IS AN ARCHIVE (as of 2026-07-08)
+> Active development moved to **`alonkos22/aura-nextjs`** (private), which contains the
+> full Next.js 16 + TypeScript migration and the unified two-phase Guardian roadmap
+> (`docs/00-unified-roadmap.md` there). The design docs in this repo's
+> `docs/personal-guardian/` were copied there under `docs/cloud-design/` and continue
+> to evolve **there, not here**. Do not develop in this repo; it stays only as history
+> and as the source of the currently-deployed Vercel prototype site (`main`).
+
+*Historical context below (accurate up to 2026-07-08):*
 
 ## 1. What Aura is
 A "Life Intelligence" system whose active MVP is **family financial management and
